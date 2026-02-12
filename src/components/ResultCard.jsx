@@ -24,7 +24,7 @@ const ResultCard = ({ tipPerson, totalPerson, onClickReset }) => {
       </div>
 
       <button type="button"
-        className={`bg-green-400 text-green-900 w-full py-3 rounded-md text-preset-4 uppercase mt-8   ${tipPerson === 0 ? 'opacity-30 cursor-not-allowed' : 'opacity-100 hover:bg-green-200 cursor-pointer'}`} disabled={tipPerson === 0 && totalPerson === 0} onClick={onClickReset}>
+        className={`bg-green-400 text-green-900 w-full py-3 rounded-md text-preset-4 uppercase mt-8   ${tipPerson === 0 ? 'opacity-30 cursor-not-allowed' : 'opacity-100 hover:bg-green-200 cursor-pointer focus:outline-3 focus:outline-orange-400'}`} disabled={tipPerson === 0 && totalPerson === 0} onClick={onClickReset}>
         Reset
       </button>
     </section>

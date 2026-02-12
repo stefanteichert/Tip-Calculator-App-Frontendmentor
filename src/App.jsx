@@ -3,6 +3,7 @@ import ResultCard from './components/ResultCard';
 import BillInput from './components/BillInput';
 import TipSelector from './components/TipSelector';
 import PeopleInput from './components/PeopleInput';
+import { calculateTip, calculateTotal } from './utils/calculations';
 
 
 function App() {
@@ -13,8 +14,9 @@ function App() {
 
   const tipPercentage = [5, 10, 15, 25, 50];
 
-  const tipPerson = numberPeople > 0 ? (bill / numberPeople) * (tip / 100) : 0;
-  const totalPerson = numberPeople > 0 ? (bill / numberPeople) + tipPerson : 0;
+  const tipPerson = calculateTip(bill, tip, numberPeople);
+  const totalPerson = calculateTotal(bill, tip, numberPeople);
+
 
   const handleBillChange = (e) => {
     setBill(parseFloat(e.target.value) || 0);
@@ -46,7 +48,7 @@ function App() {
         <h1 className="text-preset-1 tracking-[0.4em] text-grey-600 uppercase">Spli<br />tter</h1>
       </header>
       <main >
-        <div className="bg-white p-8 rounded-3xl max-w-4xl w-full grid grid-cols-1 sm:grid-cols-2 gap-8">
+        <div className="bg-white p-8 rounded-3xl sm:max-w-180 lg:max-w-4xl w-full grid grid-cols-1 lg:grid-cols-2 gap-8">
           <section aria-labelledby="input-heading">
             <h2 id="input-heading" className="sr-only">Tip calculator</h2>
             <BillInput bill={bill} handleBillChange={handleBillChange}></BillInput>

@@ -82,6 +82,6 @@ I worked with an AI Assistant to improve my development process.
 - Code Review: The AI helped me review my component structure
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/stefanteichert)
+- Frontend Mentor - [@Stefan](https://www.frontendmentor.io/profile/stefanteichert)
 
 

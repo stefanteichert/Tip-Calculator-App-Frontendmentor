@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/tip-calculator-with-reactvitetailwindcss-vitest-and-react-testing-ujLMbiGxk0)
-- Live Site URL: [Add live site URL here](https://tip-calculator-app-frontendmentor-nine.vercel.app/)
+- Solution URL: [Frontendmentor.io](https://www.frontendmentor.io/solutions/tip-calculator-with-reactvitetailwindcss-vitest-and-react-testing-ujLMbiGxk0)
+- Live Site URL: [Vercel](https://tip-calculator-app-frontendmentor-nine.vercel.app/)
 
 ## My process
 
